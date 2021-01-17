@@ -1,35 +1,319 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿
+
+.form {
+    background: #ffffff;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    padding: 4vw;
+    max-width: 40vw;
+    margin: 4vw auto;
+    border-radius: 1vw;
+    box-shadow: 0px 0px 20vw #999;
 }
 
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+.tab-group {
+    list-style: none;
+    padding: 0vw;
+    margin: 0 0 4vw 0;
+    font-family: 'Rubik', sans-serif;
 }
 
-/* Carousel */
-.carousel-caption p {
-    font-size: 20px;
-    line-height: 1.4;
+    .tab-group:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .tab-group li a {
+        display: block;
+        text-decoration: none;
+        padding: 15px;
+        border-bottom-left-radius: 2vw;
+        border-top-left-radius: 2vw;
+        border-top-right-radius: 2vw;
+        border-bottom-right-radius: 2vw;
+        background: rgba(140, 159, 156, .25);
+        color: #999;
+        font-size: 20px;
+        float: left;
+        width: 50%;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.5s ease;
+        font-family: 'Rubik', sans-serif;
+    }
+
+        .tab-group li a:hover {
+            opacity: 0.8;
+        }
+
+    .tab-group .active a {
+        background-image: linear-gradient(to right, #238a91, red);
+        color: #fff;
+    }
+
+.tab-content > div:last-child {
+    display: none;
 }
 
-/* Make .svg files in the carousel display properly in older browsers */
-.carousel-inner .item img[src$=".svg"] {
+h1 {
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    margin: 0 0 40px;
+}
+
+label {
+    position: absolute;
+    transform: translateY(6px);
+    left: 13px;
+    color: #bbb;
+    transition: all 0.25s ease;
+    -webkit-backface-visibility: hidden;
+    pointer-events: none;
+    font-size: 16px;
+    margin-top: 9px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300 !important;
+}
+
+    label .req {
+        margin: 2px;
+        color: #5780b2;
+    }
+
+    label.active {
+        transform: translateX(50px);
+        left: 2px;
+        font-size: 14px;
+    }
+
+        label.active .req {
+            opacity: 0;
+        }
+
+    label.highlight {
+        color: #238a91;
+    }
+
+input,
+textarea {
+    font-size: 22px;
+  
+    width: 100%;
+    height: 48px;
+    padding: 5px 10px;
+    background: #fff;
+    background-image: none;
+    border: 1px solid #a0b3b0;
+    border-radius: 0;
+    font-family: 'Rubik', sans-serif !important;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+    input:focus,
+    textarea:focus {
+        outline: 0;
+        border-color: #238a91;
+        border: 2px solid #238a91;
+    }
+
+textarea {
+    border: 2px solid #a0b3b0;
+    resize: vertical;
+}
+
+.field-wrap {
+    position: relative;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.field-wrap-2 {
+    position: relative;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.top-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.top-row > div {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+}
+
+    .top-row > div:last-child {
+        margin: 0;
+    }
+
+.button {
+    border: 2vw;
+    outline: none;
+    border-radius: 2vw;
+    padding: 15px 0;
+    margin-left: 25%;
+    max-width: 50%;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    background-image: linear-gradient(to right, black, red);
+    color: #fff;
+    transition: all 0.5s ease;
+    -webkit-appearance: none;
+}
+
+    .button:hover,
+    .button:focus {
+        opacity: 0.9;
+    }
+
+.button-block {
+    display: block;
     width: 100%;
 }
 
-/* QR code generator */
-#qrCode {
-    margin: 15px;
+.forgot {
+    margin-top: -30px;
+    text-align: right;
+    font-size: 1vw;
 }
 
-/* Hide/rearrange for smaller screens */
-@media screen and (max-width: 767px) {
-    /* Hide captions */
-    .carousel-caption {
-        display: none;
+.heading {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #5f8e3e;
+}
+
+
+#formLogo {
+    max-width: 6vw;
+    max-height: 6vw;
+    margin-left: 42%;
+}
+
+
+/*
+======================================= LOGIN END =======================================
+
+*/
+
+
+/*==================================== Index.cshtml===================================*/
+
+.index_Body {
+   background-color:blanchedalmond;
+    background-size:cover;
+    width:100%;
+    height:100%;
+}
+
+
+
+
+
+
+
+
+/*====================================END Index.cshtml===================================*/
+
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+.h7 {
+    font-size: 0.8rem;
+}
+
+.gedf-wrapper {
+    margin-top: 0.97rem;
+}
+
+@media (min-width: 992px) {
+    .gedf-main {
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
+
+    .gedf-card {
+        margin-bottom: 2.77rem;
+    }
+}
+
+/**Reset Bootstrap*/
+.dropdown-toggle::after {
+    content: none;
+    display: none;
 }

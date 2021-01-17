@@ -4,7 +4,15 @@
 }
 @model List<Post>
 
-<div class="text-md-center" style="font-family:Montserrat; background-color:white"><h1 style="color:black">ALL POSTS</h1></div>
+<div class="container">
+    <div class="container-fluid">
+        <div class="heading text-center bg-white text-black-50" style="margin:auto">
+            ALL Posts
+        </div>
+    </div>
+
+</div>
+<br/>
 <div class="text-center">
     <a asp-action="Create" class="btn btn-primary" style="color:white; width:200px">CREATE YOUR POST</a>
     <a asp-action="edit" class="btn btn-success" style="color:white; width:200px">EDIT YOUR PROFILE</a>
@@ -13,10 +21,8 @@
 
 @foreach (Post p in Model)
 {
-    <div class="form">
+    <div class="form bg-light">
 
-        <div class="card gedf-card">
-            <div class="card-header">
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="mr-2">
@@ -31,7 +37,6 @@
                     </div>
                 </div>
 
-            </div>
             <div class="card-body">
                 <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>@p.Date</div>
                 <a class="card-link" asp-route-id="@p.Id" asp-action="detailForPost">
@@ -49,6 +54,6 @@
                 <a href="#" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
             </div>
         </div>
-    </div>
+    
 }
 

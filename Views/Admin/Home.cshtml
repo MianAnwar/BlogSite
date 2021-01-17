@@ -4,16 +4,22 @@
 }
 @model List<Post>
 
+<div class="container">
+    <div class="container-fluid">
+        <div class="heading text-center bg-white text-black-50" style="margin:auto">
+            ALL POSTS
+        </div>
+    </div>
 
-<div class="text-md-center" style="font-family:Montserrat; background-color:white"><h1 style="color:black">ALL POSTS</h1></div>
+</div>
 @foreach (Post p in Model)
 {
     <div class="form">
 
         <div class="card gedf-card">
             <div class="card-header">
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="d-flex justify-content-between align-items-center">
+                <div class=" justify-content-between align-items-center">
+                    <div class="justify-content-between align-items-center">
                         <div class="mr-2">
                             <img class="rounded-circle" width="45" src="" alt="">
                         </div>

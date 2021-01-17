@@ -1,0 +1,54 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using BlogSite.Models
+@model User
+
+<div class="form">
+    <br>
+
+
+    <div class="tab-content">
+        <div id="user">
+            <h2 class="text-center" style="color:cornflowerblue;">Register yourself</h2>
+            <br>
+            <form method="post" asp-action="signup">
+                <div asp-validation-summary="ModelOnly"></div>
+                <div class="field-wrap-2">
+                    <input asp-for="Name" class="form-control" placeholder="Enter your Name" required />
+                    <span asp-validation-for="Name"></span>
+                </div>
+                <div class="field-wrap-2">
+                    <input asp-for="Age" class="form-control" placeholder="Enter your Age" required />
+                    <span asp-validation-for="Age"></span>
+                </div>
+                <div class="field-wrap-2">
+                    <input asp-for="Email" class="form-control" placeholder="Enter your Email" type="email" required />
+                    <span asp-validation-for="Email"></span>
+                </div>
+                <div class="field-wrap-2">
+                    <input asp-for="Username" class="form-control" placeholder="Enter your Username" required />
+                    <span asp-validation-for="Username"></span>
+                </div>
+
+                <div class="field-wrap-2">
+
+                    <input asp-for="Password" type="password" class="form-control" placeholder="Enter your Password" required />
+                    <span asp-validation-for="Password"></span>
+                </div>
+
+
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-primary" type="submit" style="width: 190px">Sign Up</button>
+
+                </div>
+            </form>
+
+        </div>
+
+        <div id="adm">
+        </div>
+
+    </div><!-- tab-content -->
+
+</div>

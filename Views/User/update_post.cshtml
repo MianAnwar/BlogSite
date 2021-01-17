@@ -1,0 +1,24 @@
+﻿@using BlogSite.Models
+@{
+    Layout = "~/Views/Shared/_Layout_User.cshtml";
+}
+@model Post
+
+<div class="heading text-center">Update Post</div>
+<div class="form">
+    <form method="post" asp-action="update_post">
+        <div class="form-control-file">
+            <h4 class="tab-content">Post Title</h4>
+            <input asp-for="Title" class="form-control" />
+        </div>
+        <br />
+        <div>
+            <h4 class="tab-content">Post Content</h4>
+            <textarea asp-for="Content" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <br />
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary" asp-route-id="@Model.Id" type="submit" style="width: 190px">Updated</button>
+        </div>
+    </form>
+</div>

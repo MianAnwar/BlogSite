@@ -1,0 +1,54 @@
+﻿@using BlogSite.Models
+@{
+    Layout = "~/Views/Shared/_Layout_User.cshtml";
+}
+@model List<Post>
+
+<div class="text-md-center" style="font-family:Montserrat; background-color:white"><h1 style="color:black">ALL POSTS</h1></div>
+<div class="text-center">
+    <a asp-action="Create" class="btn btn-primary" style="color:white; width:200px">CREATE YOUR POST</a>
+    <a asp-action="edit" class="btn btn-success" style="color:white; width:200px">EDIT YOUR PROFILE</a>
+</div>
+
+
+@foreach (Post p in Model)
+{
+    <div class="form">
+
+        <div class="card gedf-card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="mr-2">
+                            <img class="rounded-circle" width="45" src="" alt="">
+                        </div>
+                        <div class="ml-2">
+                            <div class="h5 m-0">@p.Username</div>
+                        </div>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="card-body">
+                <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>@p.Date</div>
+                <a class="card-link" asp-route-id="@p.Id" asp-action="detailForPost">
+                    <h5 class="card-title">@p.Title</h5>
+                </a>
+
+                <p class="card-text">
+                    @p.Content
+                </p>
+                <a class="btn btn-dark text-right" asp-action="detailForPost" asp-route-id="@p.Id" style="color:white">Read More</a>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="card-link"><i class="fa fa-gittip"></i> Like</a>
+                <a href="#" class="card-link"><i class="fa fa-comment"></i> Comment</a>
+                <a href="#" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
+            </div>
+        </div>
+    </div>
+}
+

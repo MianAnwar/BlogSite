@@ -1,0 +1,38 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using BlogSite.Models
+@model User
+
+<div class="form">
+
+    <div class="tab-content">
+        <div id="user">
+            <h2 class="text-center" style="color:cornflowerblue;">Welcome Back User</h2>
+
+            <form method="post" asp-action="login" id="login_form">
+                <br />
+                <div asp-validation-summary="ModelOnly"></div>
+                <div class="field-wrap">
+                    <input asp-for="Username" class="form-control" placeholder="Username" />
+                    <span asp-validation-for="Username"></span>
+                </div>
+                <div>
+                    <input asp-for="Password" type="password" class="form-control" placeholder="Password" />
+                    <span asp-validation-for="Password"></span>
+                </div>
+                <br />
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-primary" type="submit" style="width: 190px">Log in</button>
+                </div>
+            </form>
+
+        </div>
+
+        <div id="adm">
+        </div>
+
+    </div>
+
+</div>
+

@@ -1,0 +1,45 @@
+﻿@using BlogSite.Models
+@{
+    Layout = "~/Views/Shared/_Layout_Admin.cshtml";
+}
+@model List<User>
+
+<div class="container">
+    <div class="container-fluid">
+        <div class="heading text-center" style="margin:auto">
+            ALL USERS IN DATABASE
+        </div>
+    </div>
+
+</div>
+<br />
+<div style="width:800px; margin:auto">
+    <table class="table table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">NAME</th>
+                <th scope="col">USERNAME</th>
+                <th scope="col">EMAIL</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (User u in Model)
+            {
+                <tr>
+                    <td>@u.Id</td>
+                    <td>@u.Name</td>
+                    <td>@u.Username</td>
+                    <td>@u.Email</td>
+                    <td>
+                        <a class="btn btn-primary" asp-action="Update" asp-route-id="@u.Id" style="color:white">UPDATE</a>
+                        <a class="btn btn-danger" asp-action="Delete" asp-route-id="@u.Id" style="color:white">DELETE</a>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>

@@ -1,0 +1,40 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout_Admin.cshtml";
+}
+@using BlogSite.Models
+@model User
+
+<div class="heading text-center">Update User Profile</div>
+<div style="width:700px; margin:auto">
+    <form method="post" asp-action="update">
+        <div class="form-control-file">
+            <h4 class="tab-content">Username</h4>
+            <input asp-for="Username" readonly class="form-control" />
+        </div>
+        <br />
+        <div>
+            <h4 class="tab-content">Name</h4>
+            <input asp-for="Name" class="form-control" id="exampleFormControlTextarea1" rows="3" />
+        </div>
+        <br />
+        <div>
+            <h4 class="tab-content">Email</h4>
+            <input asp-for="Email" class="form-control" id="exampleFormControlTextarea1" rows="3" />
+        </div>
+        <br />
+        <div>
+            <h4 class="tab-content">Age</h4>
+            <input asp-for="Age" class="form-control" id="exampleFormControlTextarea1" rows="3" />
+        </div>
+        <br />
+        <div>
+            <h4 class="tab-content">Password</h4>
+            <input asp-for="Password" class="form-control" id="exampleFormControlTextarea1" rows="3" />
+        </div>
+        <br />
+        <div class="d-grid gap-2 m-0">
+            <button class="btn btn-primary" type="submit" style="width: 190px">Update</button>
+        </div>
+    </form>
+
+</div>

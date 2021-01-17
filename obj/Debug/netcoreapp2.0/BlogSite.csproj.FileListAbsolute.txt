@@ -1,0 +1,11 @@
+D:\UNIVERSITY DATA 1-7\Final Year\Semester 7\3 Enterprise Application Development EAD\aSSIGN 3\BlogSite\BlogSite\bin\Debug\netcoreapp2.0\BlogSite.deps.json
+D:\UNIVERSITY DATA 1-7\Final Year\Semester 7\3 Enterprise Application Development EAD\aSSIGN 3\BlogSite\BlogSite\bin\Debug\netcoreapp2.0\BlogSite.runtimeconfig.json
+D:\UNIVERSITY DATA 1-7\Final Year\Semester 7\3 Enterprise Application Development EAD\aSSIGN 3\BlogSite\BlogSite\bin\Debug\netcoreapp2.0\BlogSite.runtimeconfig.dev.json
+D:\UNIVERSITY DATA 1-7\Final Year\Semester 7\3 Enterprise Application Development EAD\aSSIGN 3\BlogSite\BlogSite\bin\Debug\netcoreapp2.0\BlogSite.dll
+D:\UNIVERSITY DATA 1-7\Final Year\Semester 7\3 Enterprise Application Development EAD\aSSIGN 3\BlogSite\BlogSite\bin\Debug\netcoreapp2.0\BlogSite.pdb
+D:\UNIVERSITY DATA 1-7\Final Year\Semester 7\3 Enterprise Application Development EAD\aSSIGN 3\BlogSite\BlogSite\obj\Debug\netcoreapp2.0\BlogSite.csprojResolveAssemblyReference.cache
+D:\UNIVERSITY DATA 1-7\Final Year\Semester 7\3 Enterprise Application Development EAD\aSSIGN 3\BlogSite\BlogSite\obj\Debug\netcoreapp2.0\BlogSite.csproj.CoreCompileInputs.cache
+D:\UNIVERSITY DATA 1-7\Final Year\Semester 7\3 Enterprise Application Development EAD\aSSIGN 3\BlogSite\BlogSite\obj\Debug\netcoreapp2.0\BlogSite.AssemblyInfoInputs.cache
+D:\UNIVERSITY DATA 1-7\Final Year\Semester 7\3 Enterprise Application Development EAD\aSSIGN 3\BlogSite\BlogSite\obj\Debug\netcoreapp2.0\BlogSite.AssemblyInfo.cs
+D:\UNIVERSITY DATA 1-7\Final Year\Semester 7\3 Enterprise Application Development EAD\aSSIGN 3\BlogSite\BlogSite\obj\Debug\netcoreapp2.0\BlogSite.dll
+D:\UNIVERSITY DATA 1-7\Final Year\Semester 7\3 Enterprise Application Development EAD\aSSIGN 3\BlogSite\BlogSite\obj\Debug\netcoreapp2.0\BlogSite.pdb

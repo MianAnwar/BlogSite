@@ -1,0 +1,52 @@
+﻿@using BlogSite.Models
+@{
+    Layout = "~/Views/Shared/_Layout_Admin.cshtml";
+}
+@model Post
+
+<div style="width:700px; margin:auto">
+    <div class="card gedf-card">
+        <div class="card-header">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="mr-2">
+                        <img class="rounded-circle" width="45" src="" alt="">
+                    </div>
+                    <div class="ml-2">
+                        <div class="h5 m-0">@Model.Username</div>
+                    </div>
+
+                </div>
+
+                <div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="card-body">
+            <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>@Model.Date</div>
+            <a class="card-link" asp-route-id="@Model.Id" asp-action="detail">
+                <h5 class="card-title">@Model.Title</h5>
+            </a>
+            <p class="card-text">
+                @Model.Content
+            </p>
+
+        </div>
+        <div class="card-footer">
+            <a href="#" class="card-link"><i class="fa fa-gittip"></i> Like</a>
+            <a href="#" class="card-link"><i class="fa fa-comment"></i> Comment</a>
+            <a href="#" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
+        </div>
+    </div>
+</div>
+<script>
+
+
+    function disable() {
+        document.getElementById("update").disable = true;
+        document.getElementById("delete").disable = true;
+    }
+
+</script>
